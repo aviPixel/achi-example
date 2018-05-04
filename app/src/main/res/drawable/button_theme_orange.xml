@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/button_press_orange"/>
+            <corners android:radius="@dimen/app_button_radius"/>
+        </shape>
+    </item>
+    <item android:state_selected="true" >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/button_press_orange"/>
+            <corners android:radius="@dimen/app_button_radius"/>
+        </shape>
+    </item>
+    <item android:state_focused="true" >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/button_press_orange"/>
+            <corners android:radius="@dimen/app_button_radius"/>
+        </shape>
+    </item>
+    <!--button_press_orange-->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorSecondary"/>
+            <corners android:radius="@dimen/app_button_radius"/>
+        </shape>
+        <!--button_default_orange-->
+    </item>
+</selector>

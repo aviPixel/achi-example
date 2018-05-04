@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.avi.achi.mvpvm.view.MainMVPVMActivity">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.avi.achi.mvpvm.viewmodel.MockDataViewModel" />
+
+        <variable
+            name="data"
+            type="com.avi.achi.mvpvm.data.MockData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_toolbar_app"/>
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app_margin_10"
+            android:text="author"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app_margin_10"
+            android:text="@{viewModel.title}"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app_margin_10"
+            android:text="description"/>
+
+        <TextView
+            android:id="@+id/tv_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app_margin_10"
+            android:text="url"/>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app_margin_10"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_published"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app_margin_10"
+            android:text="publishedAt"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@{`VersionActivity device selected : ` + data.device_name}"-->
+            <!--tools:text="VersionActivity"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_title_device"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingStart="16dp"-->
+            <!--android:paddingEnd="16dp"-->
+            <!--android:paddingBottom="16dp"-->
+            <!--android:text="Device : " />-->
+
+        <!--<fragment-->
+            <!--android:id="@+id/version_fragment"-->
+            <!--android:name="com.lightmock.mvpvmkotlin.version.view.VersionFragment"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--tools:layout="@layout/fragment_version"/>-->
+
+    </LinearLayout>
+
+</layout>

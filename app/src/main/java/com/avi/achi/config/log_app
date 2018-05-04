@@ -1,0 +1,8 @@
+***com.android.support:design
+    - preview layout, ex appbarlayout, app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+
+
+etc
+    - appbarlayout shadow toolbar
+    - RecyclerView not in NestedScrollView

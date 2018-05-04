@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appbar_layout_app"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:theme="@style/AppThemeNoActionBar.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_app"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title_app"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/app_font_head"
+                tools:text="tv_title"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <!--<FrameLayout-->
+                <!--android:id="@+id/frame_cart_app"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentEnd="true">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_cart_app"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical|end"-->
+                    <!--android:src="@drawable/ic_basket"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_qty_app"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="end|top"-->
+                    <!--android:layout_marginTop="@dimen/padding_small"-->
+                    <!--android:background="@drawable/bg_circle"-->
+                    <!--android:gravity="center"-->
+                    <!--android:paddingLeft="@dimen/padding_vsmall"-->
+                    <!--android:paddingRight="@dimen/padding_vsmall"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/app_font_noti_cart_qty"-->
+                    <!--android:text="0"-->
+                    <!--android:visibility="gone"-->
+                    <!--tools:visibility="visible"/>-->
+
+            <!--</FrameLayout>-->
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>
