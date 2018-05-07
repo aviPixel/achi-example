@@ -1,7 +1,6 @@
 package com.avi.achi.mvvm.ApiService
 
 import com.avi.achi.config.Constance
-import com.avi.achi.mvpvm.networking.MockDataApi
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
@@ -22,7 +21,7 @@ class ApiInterface {
 
     fun createService(): ApiEndpointInterface {
         val retrofit = Retrofit.Builder()
-                .baseUrl("http://lcboapi.com/")//Constance.BASE_URL
+                .baseUrl("http://nuuneoi.com/courses/500px/")//Constance.BASE_URL   http://lcboapi.com/
                 .client(setTimeOutApi())
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())

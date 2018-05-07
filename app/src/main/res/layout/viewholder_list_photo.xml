@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <!--<import type="com.avi.achi.config.GlideLib"/>-->
+
+        <variable
+            name="PhotoItemDetail"
+            type="com.avi.achi.mvvm.model.PhotoItemDetail" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80000000"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:text="@{PhotoItemDetail.userName}"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:text="Name Name Name Name Name NameNameNameNameNameName "/>
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:text="@{PhotoItemDetail.caption}"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Description Description Description Descr"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_overlay" />
+
+    </FrameLayout>
+
+</layout>

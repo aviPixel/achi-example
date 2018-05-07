@@ -11,4 +11,6 @@
     <color name="button_press_blue">#0095AD</color><!--colorPrimaryDark-->
     <color name="button_press_orange">#DC7A1B</color>
     <color name="colorSecondary">#F5881F</color>
+
+    <color name="overlay_color">#80000000</color>
 </resources>

@@ -8,17 +8,17 @@ import android.app.Application
  */
 class MainApplication : Application(), ActivityLifecycleHandlerJava.LifecycleListener {
 
-    init {
-        instance = this
-    }
-
-    companion object {
-        private var instance: MainApplication? = null
-
-        fun applicationContext() : MainApplication {
-            return instance!!
-        }
-    }
+//    init {
+//        instance = this
+//    }
+//
+//    companion object {
+//        private var instance: MainApplication? = null
+//
+//        fun applicationContext() : MainApplication {
+//            return instance!!
+//        }
+//    }
 
     override fun onCreate() {
         super.onCreate()
