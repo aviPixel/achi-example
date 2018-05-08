@@ -15,15 +15,16 @@
     </data>
 
     <FrameLayout
+        android:id="@+id/frame_item"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_marginBottom="10dp">
+        android:layout_height="250dp">
 
         <ImageView
             android:id="@+id/iv_photo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
+            android:src="@mipmap/ic_launcher"
             android:scaleType="centerCrop"/>
 
         <LinearLayout

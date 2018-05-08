@@ -52,10 +52,10 @@ class ProductAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             holder.viewholderListPhotoBinding!!.photoItemDetail = item
             holder.bind()
         }
-        else if (holder is ViewHolderEmpty) {
-            holder.viewholderEmptyBinding!!.empty
-            holder.bind()
-        }
+//        else if (holder is ViewHolderEmpty) {
+//            holder.viewholderEmptyBinding!!.empty
+//            holder.bind()
+//        }
     }
 
     override fun getItemViewType(position: Int): Int {

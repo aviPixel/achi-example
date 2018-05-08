@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.activity_main_mvvm.*
 /**
  * Created by USER on 3/5/2561.
  */
-class MainMVVMActivity : AppCompatActivity() {
+class MainMVVMActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var viewModel: ProductViewModel
     private lateinit var binding: ActivityMainMvvmBinding
@@ -42,8 +42,15 @@ class MainMVVMActivity : AppCompatActivity() {
         })
     }
 
+    override fun onResume() {
+        super.onResume()
+        viewModel.callDataApi()
+
+    }
+
     private fun initView() {
         progress_bar.visibility = View.VISIBLE
+
 
         swipe_refresh.isEnabled = true
         swipe_refresh.setOnRefreshListener(SwipeRefreshLayout.OnRefreshListener {
@@ -54,6 +61,15 @@ class MainMVVMActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this@MainMVVMActivity)
         recyclerAdapter = ProductAdapter()
         recyclerView.adapter = recyclerAdapter
+    }
+
+    override fun onClick(v: View?) {
+        when (v!!.id) {
+
+            else -> {
+
+            }
+        }
     }
 
 }
